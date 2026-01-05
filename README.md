@@ -6,12 +6,11 @@ A single-script OSINT tool for finding various social media accounts based on us
 
 ## Requirements
 
-> Tested with Python 3.12.3 on Linux Mint 22.2 "Zara".
+**Tested with Python 3.12.3 on Linux Mint 22.2 "Zara".**
 
 ### Python modules required:
-
-
-> requests
+```
+requests
 sys
 argparse
 re
@@ -19,7 +18,7 @@ urllib
 string
 colorama
 bs4
-
+```
 
 ## Usage
 The usage is fairly simple as of now. It just has one required argument, `-u`, which is the input username to search for.
