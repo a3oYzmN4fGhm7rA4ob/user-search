@@ -32,7 +32,7 @@ If you want to have the script scrape additional information (this feature is no
 python3 user-search.py -u USERNAME --getInfo
 ```
 
-If the script prints something like `An error has occured with the site. Info: 403`, this is normal. It is just telling you that an unexpected response was received. I reccomend investigating what might have caused the error, and if you think that it is an issue with the cript, a pull request for a fix would be great.
+If the script prints something like `An error has occured with the site. Info: 403`, this is normal. It is just telling you that an unexpected response was received. I reccomend investigating what might have caused the error, and if you think that it is an issue with the script, a pull request for a fix would be great.
 
 > Note that depending on your username search query, certian sites may be excluded from your search. An example would be itch.io usernames not being able to contain the period character, and therefore if I supplied the username argument `bob.joe`, the script would tell me that because of this it cannot search itch.io.
 
