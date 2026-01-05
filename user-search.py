@@ -103,7 +103,10 @@ def main():
     # All searches that are easily made with normal functions and should be done here
 
     # Soundcloud
-    result = searchForUserWithDirectURL("soundcloud.com/", args.u, {}, 200, 404, "Soundcloud")
+    try:
+        result = searchForUserWithDirectURL("soundcloud.com/", args.u, {}, 200, 404, "Soundcloud")
+    except(ConnectionError, requests.ConnectionError, requests.ConnectTimeout):
+        printResult("Soundcloud", args.u, 2, "ConnectionError")
         
     # Reddit
     result = searchForUserWithFindIn("reddit.com/u/", args.u, defaultHeaders_1, "Sorry, nobody on Reddit goes by that name.", "Reddit")
@@ -128,7 +131,7 @@ def main():
 
             # Scrape account links from GitHub
             scrapedContent = soup.find_all('a', class_='Link--primary wb-break-all')
-            if scrapedContent:
+            if scrapedContent != None:
                 for item in scrapedContent:
                         printInformation(args.u, re.sub(r"\s", "", item.get('href')), "Account Link In Bio")
             else:
