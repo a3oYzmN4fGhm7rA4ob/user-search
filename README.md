@@ -4,6 +4,8 @@ A single-script OSINT tool for finding various social media accounts based on us
 
 ![](./readme_assets/example1.png)
 
+> This project is 100% sentient-made. No LLMs are used and will never be used in this project, for code or otherwise.
+
 ## Requirements
 
 **Tested with Python 3.12.3 on Linux Mint 22.2 "Zara".**
@@ -59,3 +61,5 @@ If the script prints something like `An error has occured with the site. Info: 4
 All contributions are welcome and greatly appreciated, pull request as you like. The most helpful contributions would be adding more social media sites to the tool, or primarily adding more scraping functionality to the `--getInfo` system (sorely needed, as I have less time these days to work on it).
 
 If you are not capable of or do not want to fix an error you find, please make an issue in the repo.
+
+> Note that any LLM generated code is not allowed and will be rejected.
