@@ -238,7 +238,7 @@ def main():
             printResult(outputSite, args.u, 2, req.status_code)
         elif req.status_code == 200:
             data = req.json()
-            if data.get('reason') == 'improper_format' or data.get('reason') == 'invalid_username':
+            if data.get('reason') == 'improper_format' or data.get('reason') == 'invalid_username' or data.get('reason') == 'is_banned_word':
                     printResult(outputSite, args.u, 2, f"Unexpected JSON error! {data}")
             elif data.get('reason') == 'taken':
                 printResult(outputSite, args.u, 1, req.status_code)
