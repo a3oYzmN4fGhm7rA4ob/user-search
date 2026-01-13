@@ -8,7 +8,7 @@ A single-script OSINT tool for finding various social media accounts based on us
 
 ## Requirements
 
-**Tested with Python 3.12.3 on Linux Mint 22.2 "Zara".**
+**Tested with Python 3.12.3 on Linux Mint 22.3 "Zena".**
 
 ### Python modules required:
 ```
