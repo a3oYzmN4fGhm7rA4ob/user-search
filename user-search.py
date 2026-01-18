@@ -162,7 +162,7 @@ def main():
         'accept-language': "en-US,en;q=0.9",
         'priority': "u=0, i"}
 
-    result = searchForUserWithDirectURL("www.snapchat.com/@", args.u, headers, 200, 404, "Snapchat")
+    result = searchForUserWithDirectURL("www.snapchat.com/@", args.u, headers, 200, 404, "Snapchat")    
 
     # Instagram
     try:
