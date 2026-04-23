@@ -1,26 +1,10 @@
 # user-search
 
-A single-script OSINT tool for finding various social media accounts based on usernames.
+A simplistic single-script OSINT tool for finding various social media accounts based on usernames.
 
 ![](./readme_assets/example1.png)
 
 > This project is 100% sentient-made. No LLMs are used and will never be used in this project, for code or otherwise.
-
-## Requirements
-
-**Tested with Python 3.12.3 on Linux Mint 22.3 "Zena".**
-
-### Python modules required:
-```
-requests
-sys
-argparse
-re
-urllib
-string
-colorama
-bs4
-```
 
 ## Usage
 The usage is fairly simple as of now. It just has one required argument, `-u`, which is the input username to search for.
